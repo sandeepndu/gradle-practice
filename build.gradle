@@ -1,6 +1,6 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'scala'
+apply from: 'versions.gradle'
 
 group 'com.sb'
 version '1.0-SNAPSHOT'
@@ -12,5 +12,6 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.scala-lang:scala-library:$scalaVersion"
+    testCompile "junit:junit:$junitVersion"
 }

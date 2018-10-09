@@ -1,0 +1,4 @@
+ext {
+    scalaVersion = '2.12.7'
+    junitVersion = '4.12'
+}
